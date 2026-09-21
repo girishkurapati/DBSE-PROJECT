@@ -1,0 +1,63 @@
+*{box-sizing:border-box}
+body{margin:0;font:13px Inter,Arial,sans-serif;color:#172333;background:#f6f9fb}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.login{position:fixed;inset:0;background:linear-gradient(135deg,#eef8f8,#f9fbfc);display:grid;place-items:center;text-align:center}
+.login-card{width:390px;background:#fff;padding:32px;border:1px solid #e1eaed;border-radius:16px;box-shadow:0 20px 60px #12343d12;text-align:left}
+.logo{width:44px;height:44px;border-radius:12px;background:#176f80;color:#fff;display:grid;place-items:center;font-size:23px;font-weight:800}
+.login-card h1{margin:8px 0;font-size:28px}.login-card>p{color:#82909d;font-size:11px}
+.login>small{position:absolute;bottom:15px;color:#96a2ac}
+.eyebrow{font-size:9px;letter-spacing:1.5px;font-weight:800;color:#218094;margin-top:14px}
+label{display:block;font-size:10px;font-weight:700;color:#536679;margin:12px 0}
+input,select{width:100%;height:40px;border:1px solid #dfe7ea;border-radius:7px;padding:0 10px;margin-top:6px;outline:0;background:#fff}
+.loginButton,.primary{border:0;background:#176f80;color:#fff;padding:11px 15px;border-radius:7px;font-weight:700}
+.loginButton{width:100%;margin-top:10px}
+.remember{font-size:10px;color:#728291;display:flex;gap:6px;align-items:center}
+.remember input{width:auto;height:auto;margin:0}
+.demo{margin-top:15px;background:#f5f8f9;padding:10px;border-radius:7px;font-size:9px;line-height:1.7}
+.error{color:#c64c4c;font-size:10px;margin-top:8px}
+.sidebar{position:fixed;inset:0 auto 0 0;width:250px;background:#fff;border-right:1px solid #e4ebef;padding:20px 13px}
+.brand{display:flex;align-items:center;gap:10px;padding:0 10px 20px;border-bottom:1px solid #edf1f3}
+.brand b{color:#15576a;font-size:18px}
+nav{padding-top:14px}nav button{display:block;width:100%;padding:11px 13px;margin:3px 0;border:0;background:transparent;text-align:left;border-radius:8px;color:#526579}
+nav button.active,nav button:hover{background:#176f80;color:#fff}
+main{margin-left:250px}header{height:68px;background:#fff;border-bottom:1px solid #e6edf0;display:flex;align-items:center;padding:0 27px}
+.searchBox{max-width:540px;flex:1;border:1px solid #e0e7eb;border-radius:7px;padding:8px 11px;color:#81909f}
+.searchBox input{border:0;margin:0;padding:0;height:auto;width:90%;background:transparent}
+.profile{margin-left:auto;display:flex;align-items:center;gap:10px}.profile>button{border:1px solid #dfe7ea;background:#fff;border-radius:7px;padding:7px}
+.avatar{width:30px;height:30px;border-radius:50%;background:#315a78;color:#fff;display:grid;place-items:center;font-weight:700}
+.profile small{color:#8a98a5;font-size:9px}
+.content{padding:28px;max-width:1500px}
+.heading{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:20px}
+.heading h1{font-size:25px;margin:5px 0}.heading p{color:#7b8997;font-size:11px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:15px}
+.stat{background:#fff;border:1px solid #e3eaee;border-radius:10px;padding:18px}
+.stat span{display:block;color:#83919f;font-size:10px}.stat b{font-size:22px;display:block;margin-top:6px}
+.grid{display:grid;grid-template-columns:1.6fr .8fr;gap:14px}
+.card{background:#fff;border:1px solid #e3eaee;border-radius:10px;padding:18px;margin-bottom:14px;overflow:auto}
+.card h2{font-size:13px;margin:0 0 15px}
+.bars{height:220px;display:flex;align-items:end;gap:18px;padding:20px}
+.bar{flex:1;background:#37b38b;border-radius:5px 5px 0 0;min-width:30px;position:relative}
+.bar span{position:absolute;top:calc(100% + 7px);font-size:8px;color:#768696;left:50%;transform:translateX(-50%)}
+.donut{margin:25px auto;width:145px;height:145px;border-radius:50%;background:conic-gradient(#36b88d 0 55%,#f1bd4c 55% 72%,#e96b6b 72%);display:grid;place-items:center;align-content:center}
+.donut b,.donut small{background:#fff}.donut b{font-size:25px;width:92px;height:35px;border-radius:50px 50px 0 0;text-align:center;padding-top:17px}
+.donut small{width:92px;text-align:center;padding-bottom:17px;border-radius:0 0 50px 50px;font-size:8px;color:#7e8c9a}
+table{width:100%;border-collapse:collapse;min-width:650px}th{background:#f8fafb;color:#84929f;font-size:8px;text-transform:uppercase;text-align:left;padding:10px}
+td{padding:11px 10px;border-bottom:1px solid #edf1f3;font-size:9px;color:#536579}
+.actions{display:flex;gap:5px}.actions button{border:1px solid #dfe7ea;background:#fff;border-radius:5px;padding:4px 7px}
+.report-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.report-grid button,.settings button{padding:18px;background:#fff;border:1px solid #e1e9ec;border-radius:10px;text-align:left;font-weight:700}
+.settings{max-width:700px}.settings button{margin:6px}.danger{color:#c64c4c}
+.badge{padding:4px 8px;border-radius:20px;background:#e8f7ef;color:#278c61;font-size:8px}.badge.red{background:#ffeded;color:#c64c4c}
+.modal{position:fixed;inset:0;background:#10202c88;display:grid;place-items:center;z-index:20}
+.modal-box{background:#fff;border-radius:12px;width:min(600px,94%);max-height:90vh;overflow:auto;padding:24px;position:relative}
+.close{position:absolute;right:18px;top:18px;border:0;background:#f0f3f5;border-radius:7px;width:30px;height:30px;font-size:18px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}.form-actions{grid-column:1/-1;text-align:right;margin-top:10px}
+.form-actions button{padding:10px 15px;border:1px solid #dce4e8;border-radius:7px;background:#fff;margin-left:6px}
+.form-actions .primary{background:#176f80;color:#fff;border:0}
+.alert{padding:10px;border-bottom:1px solid #edf1f3;font-size:9px}
+.toast{position:fixed;right:20px;bottom:20px;background:#142c36;color:#fff;padding:11px 15px;border-radius:8px;z-index:100}
+@media(max-width:900px){.sidebar{width:210px}main{margin-left:210px}.stats{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.report-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.sidebar{display:none}main{margin-left:0}.content{padding:18px}.stats{grid-template-columns:1fr 1fr}.heading{align-items:flex-start;gap:10px}.login-card{width:94%}.form-grid{grid-template-columns:1fr}}
+.statusDot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-left:3px}.statusDot.online{background:#2db879;box-shadow:0 0 0 3px #2db87918}.statusDot.offline{background:#d96b6b}
+.settings button{display:inline-block;margin:6px 6px 6px 0}.settings p{color:#71808d;font-size:10px;line-height:1.6}
